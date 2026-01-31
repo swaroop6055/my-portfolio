@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jyothiswaroop Popuri — Portfolio</title>
+  <meta name="description" content="Data & Business Analyst | SQL • Python • Power BI • Tableau" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 3D background canvas -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Go to top">
+      <span class="logoDot"></span>
+      <span>Jyothiswaroop</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+
+    <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="pill">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="heroGrid">
+        <div class="heroCopy">
+          <div class="badge">Data & Business Analyst • BI • Automation</div>
+          <h1>
+            I turn messy data into <span class="gradText">clear decisions</span>.
+          </h1>
+          <p class="sub">
+            Results-driven analyst focused on SQL, Python, Power BI/Tableau, ETL pipelines,
+            and building dashboards that leaders actually use.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn glass" href="Jyothiswaroop_Popuri_Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <div class="meta">
+            <a href="mailto:popuriswaroop@gmail.com">popuriswaroop@gmail.com</a>
+            <span class="dotSep">•</span>
+            <a href="https://www.linkedin.com/in/swaroop-popuri-12a8b91bb" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- 3D-ish card -->
+        <div class="tiltWrap">
+          <div class="tiltCard" id="tiltCard" role="img" aria-label="Profile highlight card">
+            <div class="tiltGlow"></div>
+            <div class="tiltInner">
+              <div class="avatar">
+                <div class="avatarRing"></div>
+                <div class="avatarCore">JP</div>
+              </div>
+
+              <div class="cardTitle">Quick Highlights</div>
+              <ul class="chips">
+                <li>SQL</li>
+                <li>Python (Pandas)</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+                <li>ETL</li>
+                <li>APIs</li>
+                <li>Azure</li>
+              </ul>
+
+              <div class="statRow">
+                <div class="stat">
+                  <div class="statNum">3+ yrs</div>
+                  <div class="statLbl">Analytics + BI</div>
+                </div>
+                <div class="stat">
+                  <div class="statNum">40%</div>
+                  <div class="statLbl">Faster reporting</div>
+                </div>
+                <div class="stat">
+                  <div class="statNum">30%</div>
+                  <div class="statLbl">Efficiency gain</div>
+                </div>
+              </div>
+
+              <div class="cardFoot">
+                <span class="pulse"></span>
+                Open to analyst roles • Hybrid/Remote
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollHint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="twoCol">
+          <p class="lead">
+            I’m <strong>Jyothiswaroop Popuri</strong>, a Data & Business Analyst who builds reporting systems,
+            dashboards, and data pipelines that make teams faster and decisions sharper.
+          </p>
+          <p>
+            I’ve worked on automating Excel-based reporting, optimizing SQL/ETL workflows,
+            integrating API-based data pipelines, and delivering KPI insights to stakeholders
+            in Agile environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="cards3">
+          <div class="card">
+            <h3>Analytics & BI</h3>
+            <p>Power BI, Tableau, Excel (Pivot/Power Query), KPI reporting, forecasting, storytelling.</p>
+          </div>
+          <div class="card">
+            <h3>Data Engineering</h3>
+            <p>SQL (MS SQL/MySQL/Postgres), ETL pipelines, validation, optimization, migration.</p>
+          </div>
+          <div class="card">
+            <h3>Automation & Cloud</h3>
+            <p>Python (Pandas/NumPy), APIs (JSON/XML), Azure/AWS, Docker, CI/CD basics.</p>
+          </div>
+        </div>
+
+        <div class="skillCloud" aria-label="Skill tags">
+          <span>SQL</span><span>Python</span><span>Pandas</span><span>Power BI</span><span>Tableau</span>
+          <span>Excel</span><span>ETL</span><span>REST APIs</span><span>Azure</span><span>AWS</span>
+          <span>Docker</span><span>Git</span><span>JIRA</span><span>Agile</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <div class="tItem">
+            <div class="tDot"></div>
+            <div class="tCard">
+              <div class="tTop">
+                <h3>Data Analyst — Techtrove Software Solutions</h3>
+                <span class="tDate">Feb 2025 – Present</span>
+              </div>
+              <p class="muted">Enterprise Data Intelligence & Reporting Platform</p>
+              <ul>
+                <li>Built dashboards in Power BI/Tableau for sales, operations, and customer trends.</li>
+                <li>Designed optimized SQL + ETL logic with validation for high accuracy reporting.</li>
+                <li>Automated Excel reports, cutting processing time significantly and reducing errors.</li>
+                <li>Integrated API + cloud data pipelines and presented weekly insights to stakeholders.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tItem">
+            <div class="tDot"></div>
+            <div class="tCard">
+              <div class="tTop">
+                <h3>Associate Software Engineer — Tata Consultancy Services (TCS)</h3>
+                <span class="tDate">Mar 2021 – Dec 2023</span>
+              </div>
+              <p class="muted">Enterprise Monitoring & Data Intelligence Platform</p>
+              <ul>
+                <li>Built and tuned SQL extraction/transformation powering operational KPI dashboards.</li>
+                <li>Developed REST APIs for integrations between legacy systems and cloud environments.</li>
+                <li>Migrated and validated datasets (legacy SQL → MySQL) with performance tuning.</li>
+                <li>Supported Agile delivery with sprints, code reviews, and retrospectives.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projectGrid">
+          <article class="pCard">
+            <div class="pHead">
+              <h3>Enterprise Reporting Platform</h3>
+              <span class="tag">BI + ETL</span>
+            </div>
+            <p>
+              Centralized enterprise sources into a reporting layer with dashboards and automated KPI reporting.
+            </p>
+            <ul class="pList">
+              <li>Power BI/Tableau executive dashboards</li>
+              <li>SQL optimization + validation checks</li>
+              <li>API + cloud data pipelines</li>
+            </ul>
+          </article>
+
+          <article class="pCard">
+            <div class="pHead">
+              <h3>Monitoring & Data Intelligence System</h3>
+              <span class="tag">APIs + Dashboards</span>
+            </div>
+            <p>
+              Built a monitoring analytics layer with KPIs and integrations for operational insights.
+            </p>
+            <ul class="pList">
+              <li>SQL + MySQL migration</li>
+              <li>REST APIs (JSON/XML)</li>
+              <li>Agile delivery support</li>
+            </ul>
+          </article>
+
+          <article class="pCard">
+  <div class="pHead">
+    <h3>Automated Reporting & Data Quality Framework</h3>
+    <span class="tag">Python • Validation • Automation</span>
+  </div>
+
+  <p>
+    Built an automation framework to clean, validate, and publish recurring reports—reducing manual effort
+    and improving trust in KPI numbers across stakeholders.
+  </p>
+
+  <ul class="pList">
+    <li>Automated data cleaning and transformation using Python (Pandas) for consistent report-ready datasets</li>
+    <li>Implemented data quality checks (nulls, duplicates, schema drift, outliers) to catch issues early</li>
+    <li>Standardized KPI definitions and reporting logic to keep metrics consistent across teams</li>
+  </ul>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="contactCard">
+          <div>
+            <p class="lead">Want to talk analytics, BI, or a role you’re hiring for?</p>
+            <p class="muted">Email me or message me on LinkedIn — I reply fast.</p>
+          </div>
+
+          <div class="contactBtns">
+            <a class="btn primary" href="mailto:popuriswaroop@gmail.com">Email Me</a>
+            <a class="btn glass" href="https://www.linkedin.com/in/swaroop-popuri-12a8b91bb" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span>© <span id="year"></span> Jyothiswaroop Popuri</span>
+          <span class="dotSep">•</span>
+          <span>Built with HTML/CSS/JS</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
