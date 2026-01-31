@@ -254,13 +254,10 @@ h1{
   transform: translateZ(40px);
 }
 
-.avatar {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;  /* makes sure image stays inside the circle */
-  border-radius: 50%;
+.avatar{
+  width: 64px; height: 64px;
+  position:relative;
+  margin-bottom: 14px;
 }
 .avatarRing{
   position:absolute; inset:0;
