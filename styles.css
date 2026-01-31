@@ -254,24 +254,36 @@ h1{
   transform: translateZ(40px);
 }
 
-.avatar{
-  width: 64px; height: 64px;
-  position:relative;
-  margin-bottom: 14px;
-}
-.avatarRing{
-  position:absolute; inset:0;
+.avatar {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  margin-bottom: 20px;
   border-radius: 50%;
-  background: conic-gradient(from 180deg, rgba(86,77,255,1), rgba(0,255,209,1), rgba(86,77,255,1));
-  filter: blur(.2px);
+  overflow: hidden;
 }
-.avatarCore{
-  position:absolute; inset:3px;
+
+.avatarRing {
+  position: absolute;
+  inset: 0;
   border-radius: 50%;
-  display:grid; place-items:center;
-  background: rgba(0,0,0,.55);
-  border:1px solid rgba(255,255,255,.10);
-  font-weight: 800;
+  background: conic-gradient(
+    from 180deg,
+    rgba(86,77,255,1),
+    rgba(0,255,209,1),
+    rgba(86,77,255,1)
+  );
+  filter: blur(2px);
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  border: 2px solid rgba(255,255,255,0.15);
 }
 
 .cardTitle{
